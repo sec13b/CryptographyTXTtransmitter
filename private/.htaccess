@@ -1,0 +1,11 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+<IfModule mod_rewrite.c>
+
+</IfModule>
+
+# Запретить посещение директории
+<FilesMatch ~ "\.(php|htm|html|js)$">
+	Deny from all
+</FilesMatch>
